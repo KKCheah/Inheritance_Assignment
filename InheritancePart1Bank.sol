@@ -1,6 +1,8 @@
 pragma solidity 0.7.5;
 
-contract Bank{
+import "./InheritancePart3SelfDestruct.sol";
+
+contract Bank is Destroyable{
     mapping(address => uint)balance;
     
     address owner;
